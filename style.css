@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+    font-family: 微軟正黑體;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: bold;
+}
+
+header.jumbotron {
+    text-align: center;
+    background-image: url("http://news.nationalgeographic.com/content/dam/news/2017/01/26/dolphin-selfie/dolphin-selfie.jpg");
+    background-size: cover;
+    color: white;
+    padding: 150px;
+}
+
+section {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+section .section-heading {
+    font-size: 36px;
+}
+
+section .section-subheading {
+    font-size: 18px;
+}
+
+.col-delph {
+    padding: 90px;
+}
+
+.col-delph img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+section.story {
+    background-color: #eee;
+}
+
+section.story .icon {
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+section.story .col-md-6 {
+    padding: 20px;
+    font-size: 16px;
+}
+
+section.pictures {
+    color: black;
+    padding: 0px;
+}
+
+section.pictures .col-md-6 {
+    padding: 150px;
+    transition-duration: 0.5s;
+}
+
+section.pictures .col-md-6:hover {
+    color: #fff;
+}
+
+section.pictures .col-md-6:hover:before {
+    background-size: 110%;
+    filter: brightness(0.5);
+}
+
+section.pictures .col-md-6::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition-duration: 0.5s;
+    background-position: center center;
+}
+
+section.pictures .pic1:before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/33/Akrotiri_dolphins.jpg);
+    background-size: 120% auto;
+}
+
+section.pictures .pic2:before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Whale_meat_on_sale_at_a_Tokyo_fish_market_in_2008.jpg");
+    background-size: 120% auto;
+}
+
+section.ask {
+    background-color: #01233C;
+    color: white;
+}
